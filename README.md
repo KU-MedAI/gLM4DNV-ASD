@@ -97,9 +97,7 @@ De novo variants were collected from multiple ASD cohorts, including **SSC, SPAR
 
 Fine-tuning tasks were constructed using publicly available datasets such as **ClinVar, gnomAD, the BEND benchmark, and the NCRE activity dataset**.
 
-Detailed instructions for preparing the required datasets are provided in:
-
-`data/README.md`
+Detailed instructions for preparing the required datasets are provided in: `data/README.md`
 
 ---
 
