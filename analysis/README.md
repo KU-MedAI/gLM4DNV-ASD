@@ -38,6 +38,7 @@ This analysis evaluates how fine-tuning alters the latent representations of gen
 This analysis assesses whether variants prioritized by model attention converge on biological pathways associated with ASD. 
 
 **Data used:**
+- **Variant-to-gene mapping data** generated using Ensembl VEP
 - Attention scores derived from each **model–task combination**
 - Clinical severity annotations (**ADOS CSS** and **VABS**)
 
