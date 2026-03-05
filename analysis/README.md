@@ -24,11 +24,9 @@ analysis/
 ### Representational shifts in latent embedding space
 This analysis evaluates how fine-tuning alters the latent representations of genomic variants and whether these changes align with known functional annotations.
 
-- Compare cosine similarity between reference and variant embeddings in Zero-shot and Fine-tuned models to assess representational shifts in the latent space.
-
-- Group variants into HIGH and NON-HIGH impact categories using VEP annotations and compare Delta Cosine (Sim_FT − Sim_Zero) to evaluate sensitivity to molecular consequences.
-
-- Define Pathogenic and Benign variants using CADD Phred thresholds and test whether Delta Cosine shifts preferentially occur in predicted pathogenic variants.
+- Compute cosine similarity between reference and variant embeddings for Zero-shot and Fine-tuned models.
+- Stratify variants by VEP impact and compare the magnitude of representation shifts.
+- Stratify variants by CADD and evaluate whether shifts are enriched in predicted pathogenic variants.
 
 ### Functional variant enrichment in attention scores
 ### Alignment between prediction confidence and disease gene prioritization
