@@ -27,7 +27,7 @@ These analyses assess embedding representations and attention scores at the vari
 **Data used:**
 - **Variant-to-gene mapping data** generated using **Ensembl VEP**
 - **CADD Phred scores** used to define functionally deleterious variants
-- **Reference and variant embeddings** from each model in both **Zero-shot** and **Fine-tuned** settings
+- **Reference and variant embeddings** from each model in both **zero-shot** and **fine-tuned** settings
 - **Attention scores** from each **model–task combination**
 
 ### 1. Representational shifts in latent embedding space
