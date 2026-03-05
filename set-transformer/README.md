@@ -1,10 +1,22 @@
 # Set Transformer
 
 ## Overview
-This repository contains a deep learning pipeline designed to predict Autism Spectrum Disorder (ASD) based on genetic variant embeddings. Since each individual has a different number of genetic mutations, this model treats a patient's mutations as an unordered, variable-length set. By utilizing a Set Transformer architecture, the model efficiently aggregates these variant embeddings into a single, comprehensive patient-level representation for binary classification (ASD vs. Control).
+This module implements a **Set Transformer–based model** for predicting Autism Spectrum Disorder (ASD) from genetic variant embeddings.
+
+The model treats variants within each individual as an **unordered set with variable size**, and aggregates them into a **sample-level representation** for classification.
+
+**Inputs**
+- Variant-level embeddings produced by genomic language models (**zero-shot or fine-tuned**)
+- Each sample contains a **variable number of variants**
+
+**Model**
+- A **Set Transformer architecture** is used to aggregate variant embeddings
+- Generates a single **sample-level representation**
+
+**Output**
+- Binary classification: **ASD vs. Control**
+
 
 ## Usage
-**데이터 경로나 모델명 등 바꿀 거 있으면 추가로 넣기**
-<br>
 
 Run the notebook: `set_transformer.ipynb`
