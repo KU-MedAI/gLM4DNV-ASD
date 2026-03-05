@@ -77,6 +77,9 @@ pip install pandas numpy scipy
 # Progress Display
 pip install tqdm
 
+# Parameter-Efficient Fine-Tuning (LoRA)
+pip install peft
+
 # Analysis - GSEApy Enrichr
 pip install gseapy
 
