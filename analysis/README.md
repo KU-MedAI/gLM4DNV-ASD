@@ -34,14 +34,16 @@ This analysis evaluates how fine-tuning alters the latent representations of gen
 ---
 
 ## Biological interpretability of ASD prediction
-This analysis assesses whether the mutations prioritized by the model through attention scores converge on biological pathways associated with ASD
+
+This analysis assesses whether variants prioritized by model attention converge on biological pathways associated with ASD.  
+Attention scores from each model–task combination are used as the primary signal, and clinical severity annotations (ADOS and VABS) are incorporated for subgroup analyses.
 
 ### Attention-based variant prioritization enrichment analysis
-- Normalize attention scores within each sample using CLR transformation.
-- Select top and bottom 10% attention-ranked variants.
-- Map variants to genes and perform GO Biological Process enrichment analysis.
+- Normalize attention scores within each sample using **CLR transformation**
+- Select **top and bottom 10% attention-ranked variants**
+- Map variants to genes and perform **GO Biological Process enrichment**
 
 ### Enrichment analysis of ASD subgroups based on severity annotation
-- Apply the same enrichment framework to clinically defined ASD subgroups.
-- Define severe groups using ADOS and VABS severity annotations.
-- Compare pathway enrichment patterns of top/bottom attention-ranked variants within each subgroup.
+- Apply the same enrichment framework to **clinically defined ASD subgroups**
+- Define severe groups using **ADOS and VABS severity annotations**
+- Compare pathway enrichment patterns between **top/bottom attention-ranked variants**
