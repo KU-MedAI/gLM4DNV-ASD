@@ -3,7 +3,7 @@
 ---
 
 ## Overview
-This section contains analyses designed to investigate how genomic language model (gLM) representations change after fine-tuning in the context of Autism Spectrum Disorder (ASD) prediction.
+This directory contains analyses designed to investigate how genomic language model (gLM) representations change after fine-tuning in the context of Autism Spectrum Disorder (ASD) prediction.
 
 ## Directory Structure
 ```text
