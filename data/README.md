@@ -61,8 +61,8 @@ This unified representation enables consistent fine-tuning across diverse genomi
 ---
 
 ## Data Access
-- De novo variant data
-  - Due to data access restrictions, raw datasets cannot be distributed in this repository.
+- De novo variant and severity annotations data
+  - Access to the raw datasets must be obtained directly from the original data providers.
 - Fine-tuning task data
 Fine-tuning tasks were constructed using publicly available datasets:
 
