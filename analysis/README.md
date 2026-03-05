@@ -22,21 +22,13 @@ analysis/
 
 ## Analysis of fine-tuning effects
 ### Representational shifts in latent embedding space
+This analysis evaluates how fine-tuning alters the latent representations of genomic variants and whether these changes align with known functional annotations.
 
-#### Cosine similarity distribution analysis
-- Normalize reference and variant embeddings and compute cosine similarity.
-- Compare **Zero-shot** and **Fine-tuned** distributions using histogram grids.
-- Quantify distributional shifts using **Cliff's Delta (δ)** effect size.
+- Compare cosine similarity between reference and variant embeddings in Zero-shot and Fine-tuned models to assess representational shifts in the latent space.
 
-#### VEP-based variant impact enrichment analysis
-- Categorize variants into **HIGH** and **NON-HIGH** impact groups using VEP annotations.
-- Compute **Delta Cosine (Sim_FT − Sim_Zero)** for each variant.
-- Compare distributions between impact groups to evaluate sensitivity to molecular consequences.
+- Group variants into HIGH and NON-HIGH impact categories using VEP annotations and compare Delta Cosine (Sim_FT − Sim_Zero) to evaluate sensitivity to molecular consequences.
 
-#### Pathogenicity enrichment analysis based on CADD scores
-- Define **Pathogenic** and **Benign** variants using CADD Phred score thresholds.
-- Perform **Mann–Whitney U tests with Bonferroni correction**.
-- Evaluate whether Delta Cosine shifts align with predicted pathogenicity.
+- Define Pathogenic and Benign variants using CADD Phred thresholds and test whether Delta Cosine shifts preferentially occur in predicted pathogenic variants.
 
 ### Functional variant enrichment in attention scores
 ### Alignment between prediction confidence and disease gene prioritization
