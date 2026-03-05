@@ -11,7 +11,7 @@ analysis/
 ├── README.md
 ├── fine-tuning-effects/
 │   ├── embedding_vector_analysis.ipynb
-│   ├── attention_score_analysis.ipynb
+│   └── attention_score_analysis.ipynb
 │
 └── biological-interpretability/
     ├── attn_score_based_enrichment.ipynb
