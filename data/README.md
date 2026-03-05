@@ -13,22 +13,21 @@ De novo variants were collected from multiple ASD cohorts:
 - MSSNG  
 - Korean ASD cohort
 
-The variant dataset links each sample (vcf_iid) to its specific genetic alteration (locus, variant, alleles) and target gene (gene_symbol). It includes functional impact predictors and pathogenicity scores (e.g., most_severe_consequence, CADD_phred, REVEL, AlphaMissense, pLI). Crucially for sequence-based modeling, the dataset provides extended reference and variant DNA sequences across multiple window sizes along with their precise mutation indices.
+The variant dataset links each sample (vcf_iid) to its specific genetic alteration (locus, variant, alleles) and target gene (gene_symbol). It includes functional impact predictors and pathogenicity scores (e.g., most_severe_consequence, CADD_phred). Crucially for sequence-based modeling, the dataset provides extended reference and variant DNA sequences across multiple window sizes along with their precise mutation indices.
 
 In addition to genomic variants, clinical severity annotations were obtained from the same cohorts when available to serve as targets for downstream analyses. These clinical annotations were mapped to the corresponding genomic data using the unique sample identifier (vcf_iid). To construct the target variables for evaluating the clinical impact of these variants, we specifically focused on key standardized behavioral and cognitive assessment scores: the Autism Diagnostic Observation Schedule Total Score (ADOS_Total) and the Vineland Adaptive Behavior Scales (VABS).
 
 ## 2. Fine-tuning task datasets -> 어떻게 생겼는지 설명 추가
--> 우리 실제 이름으로 변경 필요
 <br> 
 
 Fine-tuning tasks were constructed using publicly available datasets:
 
-- ClinVar  
-- gnomAD  
-- BEND benchmark  
-- BRAIN-MAGNET model (NCRE activity dataset)
+- ClinVar Missense Variants  
+- gnomAD Variants   
+- BEND Non-coding Variants  
+- Non-coding Regulatory Elements
 
-All datasets were processed to ensure consistent input construction, and sequence inputs were generated from the **GRCh38 reference genome**.
+To ensure compatibility across different supervised learning tasks, all datasets were standardized into a uniform format consisting of sequence-label pairs. Sequence inputs were generated from the GRCh38 reference genome by extracting fixed-length DNA windows centered on the variants or regions of interest. These sequence inputs were then paired with task-specific target labels: binary pathogenicity annotations for ClinVar, variant frequencies for gnomAD, and functional or regulatory activity metrics for BEND and NCRE. This consistent structural formulation enabled streamlined fine-tuning across diverse genomic contexts.
 
 
 ## Data Access
