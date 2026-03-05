@@ -9,12 +9,12 @@ This directory contains the code and resources for **{short description of the m
 ```text
 fine-tuned/
 ├── README.md
-├── ft-classification/
-│   └── {model directories}
-├── ft-regression/
-│   └── {model directories}
-└── variant-pooling/
-    └── {model directories}
+└── {model directories}
+     ├── classification
+         ├── ft_{model}_classification.py
+         └── run_ft_{model}_classification.sh
+     ├── regression
+     └── variant-pooling
 ```
 
 ## Tasks
