@@ -35,8 +35,11 @@ This analysis evaluates how fine-tuning alters the latent representations of gen
 
 ## Biological interpretability of ASD prediction
 
-This analysis assesses whether variants prioritized by model attention converge on biological pathways associated with ASD.  
-Attention scores from each model–task combination are used as the primary signal, and clinical severity annotations (ADOS and VABS) are incorporated for subgroup analyses.
+This analysis assesses whether variants prioritized by model attention converge on biological pathways associated with ASD. 
+
+**Data used:**
+- Attention scores derived from each **model–task combination**
+- Clinical severity annotations (**ADOS CSS** and **VABS**)
 
 ### Attention-based variant prioritization enrichment analysis
 - Normalize attention scores within each sample using **CLR transformation**
