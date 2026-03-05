@@ -10,21 +10,32 @@ This directory contains the code and resources for **{short description of the m
 fine-tuned/
 ├── README.md
 ├── ft-classification/
-│   └── run.py
+│   └── {model directories}
 ├── ft-regression/
-│   └── run.py
+│   └── {model directories}
 └── variant-pooling/
-    └── run.py
+    └── {model directories}
 ```
 
-## Fine-Tuning Effects Analysis
-### 1. py
-### 2. py
-### 3. py
--> 각 파일별로 간단히 설명하기
+## Tasks
 
-## Biological interpretability Analysis
-### 1. py
-### 2. py
-### 3. py
--> 각 파일별로 간단히 설명하기
+Two types of fine-tuning tasks are implemented:
+
+- **Classification**
+- **Regression**
+
+Each task is implemented separately for each genomic language model.
+
+## Usage
+
+Example:
+
+```bash
+bash ft-classification/dnabert/run.sh
+```
+
+After fine-tuning, variant pooling is performed using scripts in: 
+
+```bash
+bash variant-pooling/dnabert/pooling_best.sh
+```
