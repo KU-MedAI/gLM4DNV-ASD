@@ -10,9 +10,8 @@ Autism Spectrum Disorder (ASD) 넣어주기 (아래에서 약어 사용함)
 analysis/
 ├── README.md
 ├── fine-tuning-effects/
-│   ├── embedding_vector_analysis.py
-│   ├── attention_score_analysis_1.py
-│   └── attention_score_analysis_2.py    # Total 3 files (incl. the 2 above)
+│   ├── embedding_vector_analysis.ipynb
+│   ├── attention_score_analysis.ipynb
 │
 └── biological-interpretability/
     ├── attn_score_based_enrichment.ipynb
