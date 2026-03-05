@@ -1,5 +1,10 @@
 # Zero-shot
 
+## Overview
+
+This repository implements a variant pooling strategy to derive variant-level representations from sequence embeddings produced by genomic language models. Token embeddings corresponding to the mutated nucleotide positions are extracted from the model outputs. When a variant affects multiple positions (e.g., frameshift mutations), the embeddings at those loci are aggregated using max pooling to generate a single variant-level feature vector. This pooled embedding serves as the final representation for each variant.
+
+
 ## Model List
 
 - **DNABERT**
@@ -10,6 +15,7 @@
 - **Evo 2**
 - **PhyloGPN**
 
-## Variant Pooling
 
-To obtain variant-level representations from sequence embeddings, token embeddings corresponding to the mutated nucleotide positions were extracted from the model outputs. For variants affecting multiple positions (e.g., frameshift mutations), the embeddings at the affected loci were aggregated using max pooling to produce a single variant-level feature vector. This pooled representation was used as the final embedding for each variant.
+## Usage
+
+Run this notebook: `zs_variant_pooling.ipynb`
