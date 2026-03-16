@@ -1,4 +1,4 @@
-# Challenges in De Novo Variant-Based Autism Spectrum Disorder Prediction Using Genomic Language Models
+# Benchmarking genomic language models for variant representation in autism spectrum disorder prediction
 
 ---
 
