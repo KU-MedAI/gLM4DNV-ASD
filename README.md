@@ -4,7 +4,7 @@
 
 ## Abstract
 <div align="center">
-<img width="2009" height="1520" alt="260122 figure1 overview   Model architecture" src="https://github.com/user-attachments/assets/6bfbe945-7285-4fcc-b36a-9190c0eec72b" />
+![260323_figure1](https://github.com/user-attachments/assets/a23dbc2f-3304-4d3a-958a-846ff9009d93)
 
 </div>
 <br>
