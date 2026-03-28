@@ -1,4 +1,4 @@
-# Benchmarking genomic language models for variant representation in autism spectrum disorder prediction
+# Benchmarking genomic language models for disease prediction in autism spectrum disorder
 
 ---
 
